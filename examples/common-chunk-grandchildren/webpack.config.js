@@ -3,6 +3,7 @@ const webpack = require("../../");
 const path = require("path");
 
 module.exports = [
+
 	{
 		// mode: "development || "production",
 		entry: {
@@ -24,6 +25,7 @@ module.exports = [
 			occurrenceOrder: true // To keep filename consistent between different modes (for example building only)
 		}
 	},
+
 	{
 		// mode: "development || "production",
 		entry: {
@@ -46,4 +48,5 @@ module.exports = [
 			occurrenceOrder: true // To keep filename consistent between different modes (for example building only)
 		}
 	}
+
 ];

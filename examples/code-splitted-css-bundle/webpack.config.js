@@ -3,16 +3,16 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
 	// mode: "development || "production",
 	module: {
-		rules: [
-			{
-				test: /\.css$/,
-				use: ExtractTextPlugin.extract({
-					fallback: "style-loader",
-					use: "css-loader"
-				})
-			},
-			{ test: /\.png$/, loader: "file-loader" }
-		]
+		rules: [{
+			test: /\.css$/,
+			use: ExtractTextPlugin.extract({
+				fallback: "style-loader",
+				use: "css-loader"
+			})
+		}, {
+			test: /\.png$/,
+			loader: "file-loader"
+		}]
 	},
 	plugins: [
 		new ExtractTextPlugin({

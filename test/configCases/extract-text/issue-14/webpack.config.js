@@ -5,12 +5,10 @@ module.exports = {
 		__filename: false
 	},
 	module: {
-		rules: [
-			{
-				test: /\.css$/,
-				loader: ETP.extract("css-loader")
-			}
-		]
+		rules: [{
+			test: /\.css$/,
+			loader: ETP.extract("css-loader")
+		}]
 	},
 	optimization: {
 		minimize: false

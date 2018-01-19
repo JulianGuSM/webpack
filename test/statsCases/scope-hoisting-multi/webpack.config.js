@@ -1,5 +1,6 @@
 var webpack = require("../../../");
 module.exports = [
+
 	{
 		mode: "production",
 		entry: {
@@ -24,6 +25,7 @@ module.exports = [
 			assets: false
 		}
 	},
+
 	{
 		mode: "production",
 		entry: {
@@ -46,4 +48,5 @@ module.exports = [
 			optimizationBailout: true
 		}
 	}
+
 ];

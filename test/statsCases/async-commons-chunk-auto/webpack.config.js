@@ -9,6 +9,7 @@ const stats = {
 	modules: false
 };
 module.exports = [
+
 	{
 		name: "async-only",
 		mode: "production",
@@ -28,6 +29,7 @@ module.exports = [
 		},
 		stats
 	},
+
 	{
 		name: "vendors1",
 		mode: "production",
@@ -49,6 +51,7 @@ module.exports = [
 		},
 		stats
 	},
+
 	{
 		name: "async-and-vendor",
 		mode: "production",
@@ -76,4 +79,5 @@ module.exports = [
 		},
 		stats
 	}
+
 ];

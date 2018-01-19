@@ -36,20 +36,20 @@ module.exports = [
 	undefined,
 	"UglifyJs",
 	/UglifyJs/,
-	warnings => true,
-	["UglifyJs"],
+	warnings => false, ["UglifyJs"],
 	[/UglifyJs/],
 	[
-		warnings => true
+		warnings => false
 	],
 	"should not filter",
 	/should not filter/,
-	warnings => false,
-	["should not filter"],
+	warnings => false, ["should not filter"],
 	[/should not filter/],
 	[
 		warnings => false
 	]
 ].map(filter => Object.assign({}, baseConfig, {
-	stats: Object.assign({}, baseConfig.stats, { warningsFilter: filter })
+	stats: Object.assign({}, baseConfig.stats, {
+		warningsFilter: filter
+	})
 }));

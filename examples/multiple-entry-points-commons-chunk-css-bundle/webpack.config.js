@@ -15,6 +15,7 @@ module.exports = {
 	},
 	module: {
 		rules: [
+
 			{
 				test: /\.css$/,
 				use: ExtractTextPlugin.extract({
@@ -22,7 +23,10 @@ module.exports = {
 					use: "css-loader"
 				})
 			},
-			{ test: /\.png$/, loader: "file-loader" }
+			{
+				test: /\.png$/,
+				loader: "file-loader"
+			}
 		]
 	},
 	plugins: [

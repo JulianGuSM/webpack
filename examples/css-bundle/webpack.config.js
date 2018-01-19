@@ -4,13 +4,18 @@ module.exports = {
 	// mode: "development" || "production",
 	module: {
 		rules: [
+
 			{
 				test: /\.css$/,
 				use: ExtractTextPlugin.extract({
 					use: "css-loader"
 				})
 			},
-			{ test: /\.png$/, loader: "file-loader" }
+			{
+				test: /\.png$/,
+				loader: "file-loader"
+			}
+
 		]
 	},
 	plugins: [

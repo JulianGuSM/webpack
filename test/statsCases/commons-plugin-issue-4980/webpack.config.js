@@ -18,7 +18,7 @@ module.exports = [{
 			name: "runtime"
 		})
 	]
-},{
+}, {
 	mode: "production",
 	entry: {
 		app: "./entry-2.js"
